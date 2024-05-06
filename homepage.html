@@ -109,12 +109,18 @@
           margin-left: 579px;
           margin-top: 10px;
           width: 450px;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -o-user-select: none;
+          user-select: none;
+          pointer-events: none;
         }
 
         .allinone {
           position: absolute;
           margin-top: 486px;
-          margin-left: 580px;
+          margin-left: 476px;
           background: rgb(131,58,180);
           background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
           background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
@@ -164,7 +170,7 @@
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         margin-left: 320px;
-        margin-top: 155px;
+        margin-top: 955px;
       }
 
       .dropdown-content a {
@@ -178,6 +184,10 @@
       .dropdown a:hover {background-color: #ddd;}
 
       .show {display: block;}
+
+      li {
+        font-family: PlayfairRegular;
+      }
     </style>
 </head>
 <body>
@@ -216,6 +226,9 @@
         <li>If you are not satisfied with your purchase of a product for any reason, you may return it to us for a full refund,
           swap out, or store credit.</li>
       </ul>
+
+      <p style="position: absolute; margin-top: 1290px; margin-left: 392px; font-size: 64px; font-weight: 800; -webkit-user-select: none; color: rgba(128, 110, 110, 0.596);">Products will show here</p>
+      <p style="position: absolute; margin-top: 1900px; margin-left: 417px; color: gold; -webkit-user-select: none; -ms-user-select: none; user-select: none;">space</p>
       <script>
         function myFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
