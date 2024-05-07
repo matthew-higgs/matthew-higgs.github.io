@@ -119,15 +119,18 @@
 
         .allinone {
           position: absolute;
-          margin-top: 486px;
-          margin-left: 476px;
+          margin-top: 416px;
+          margin-left: 760px;
+          transform: rotate(-9deg);
           background: rgb(131,58,180);
           background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
           background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
           background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
-          padding: 20px;
-          font-size: 50px;
+          text-align: center;
+          width: 260px;
+          height: 30px;
+          font-size: 20px;
           border-radius: 5px;
           cursor: default;
           font-family: PlayfairRegular;
@@ -188,6 +191,12 @@
       li {
         font-family: PlayfairRegular;
       }
+
+      .barber {
+        position: absolute;
+        border-radius: 10px;
+        width: 800px;
+      }
     </style>
 </head>
 <body>
@@ -229,6 +238,9 @@
 
       <p style="position: absolute; margin-top: 1290px; margin-left: 392px; font-size: 64px; font-weight: 800; -webkit-user-select: none; color: rgba(128, 110, 110, 0.596); font-family: Arial, Helvetica, sans-serif;">Products will show here</p>
       <p style="position: absolute; margin-top: 1900px; margin-left: 417px; color: gold; -webkit-user-select: none; -ms-user-select: none; user-select: none;">space</p>
+
+      <img src="barber.jpeg" class="barber">
+
       <script>
         function myFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
