@@ -106,7 +106,7 @@
 
         .sweet_spot {
           position: absolute;
-          margin-left: 202px;
+          margin-left: 169px;
           margin-top: -316px;
           width: 1250px;
           -webkit-user-select: none;
@@ -119,8 +119,8 @@
 
         .allinone {
           position: absolute;
-          margin-top: 416px;
-          margin-left: 760px;
+          margin-top: -96px;
+          margin-left: 751px;
           transform: rotate(-9deg);
           background: rgb(131,58,180);
           background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
@@ -195,7 +195,53 @@
       .barber {
         position: absolute;
         border-radius: 10px;
-        width: 800px;
+        width: 445px;
+        margin-top: 140px;
+        margin-left: 79px;
+      }
+
+      .nailpainting {
+        width: 445px;
+        border-radius: 10px;
+        margin-top: 140px;
+        margin-left: 1070px;
+      }
+
+      .mySlides {display: none;}
+
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin-top: 185px;
+        margin-left: 280px;
+      }
+
+      .numbertext {
+        color: black;
+        font-size: 19px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 305px;
+        font-weight: bolder;
+        text-shadow: 2px 2px 5px violet;
+      }
+
+      .active {
+        background-color: #717171;
+      }
+
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+
+      @media only screen and (max-width: 300px) {
+        .text {font-size: 11px}
       }
     </style>
 </head>
@@ -240,6 +286,55 @@
       <p style="position: absolute; margin-top: 1900px; margin-left: 417px; color: gold; -webkit-user-select: none; -ms-user-select: none; user-select: none;">space</p>
 
       <img src="barber.jpeg" class="barber">
+      <img src="nailpainting.jpeg" class="nailpainting">
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">Shop for the best beauty products that works for you.</div>
+          <img src="shopkeeper.jpeg" style="width:100%; height: 350px; border-radius: 5px; object-fit: fill;">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">Schedule your hair appointment at anytime!</div>
+          <img src="barber3.webp" style="width:100%; border-radius: 5px; height: 350px;">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="img_mountains_wide.jpg" style="width:100%; border-radius: 5px;">
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+      
+      <script>
+        let slideIndex = 0;
+        showSlides();
+          
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000);
+          }
+        </script>
 
       <script>
         function myFunction() {
