@@ -17,6 +17,11 @@
           src: url(PlayfairDisplay-SemiBold.ttf);
         }
 
+        @font-face {
+          font-family: PlayfairExtraBold;
+          src: url(PlayfairDisplay-ExtraBold.ttf);
+        }
+
         * {
           box-sizing: border-box;
         }
@@ -90,6 +95,68 @@
             border: 1px solid #ccc;  
           }
         }
+      
+      
+      #providedservices {
+      font-family: PlayfairRegular;
+      border-collapse: collapse;
+      width: 900px;
+      position: absolute;
+      margin-top: 160px;
+      margin-left: 370px;
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+      }
+
+      #providedservices td, #providedservices th {
+      border: 1px solid black;
+      padding: 8px;
+      }
+
+      #providedservices tr:nth-child(even){background-color: #f2f2f2;}
+      #providedservices tr:nth-child(odd){background-color: rgb(189, 188, 188);}
+
+      #providedservices th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: yellow;
+      color: rgb(49, 43, 43);
+      }
+
+      .services {
+        position: absolute;
+        font-family: PlayfairExtraBold;
+        background-color: yellowgreen;
+        border: 5px solid #73AD21;
+        border-style: dashed;
+        padding: 25px;
+        width: 590px;
+        font-size: xx-large;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 515.999px;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+      }
+
+      .note {
+        background-color: whitesmoke;
+        position: absolute;
+        padding: 4px;
+        border-radius: 3px;
+        font-family: PlayfairExtraBold;
+        font-size: 14px;
+        margin-left: 1109px;
+        margin-top: 164px;
+        z-index: 1;
+        transform: rotate(14deg);
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+      }
     </style>
 </head>
 <body>
@@ -101,6 +168,7 @@
         <a href="policies.html" style="font-family: PlayfairRegular;">Policies</a>
         <a href="reviews.html" style="font-family: PlayfairRegular;">Reviews</a>
         <a href="about.html" style="font-family: PlayfairRegular;">About</a>
+        <a href="gallery.html" style="font-family: PlayfairRegular;">Gallery</a>
         <div class="search-container">
             <form action="/action_page.php">
               <input type="text" placeholder="Search.." name="search">
@@ -108,5 +176,47 @@
             </form>
           </div>
       </div>
+      
+      <div class="services">Services Provided / Cost & Revenue</div>
+      <div class="note">All provided services' prices are varied.</div>
+
+      <table id="providedservices">
+        <tr>
+          <td>Lashes & Aesthetics (15,000)</td>
+          <td>$110</td>
+        </tr>
+        <tr>
+          <td>Waxing (5,000)</td>
+          <td>$50</td>
+        </tr>
+        <tr>
+          <td>Facials (3,000)</td>
+          <td>$40</td>
+        </tr>
+        <tr>
+          <td>Manicure / Pedicure (800)</td>
+          <td>$40</td>
+        </tr>
+        <tr>
+          <td>Massages (1200)</td>
+          <td>$60</td>
+        </tr>
+        <tr>
+          <td>Hair Services (20,000)</td>
+          <td>$50</td>
+        </tr>
+        <tr>
+          <td>Aromatherapy (10,000)</td>
+          <td>$45</td>
+        </tr>
+        <tr>
+          <td>Therapeutic Sessions (10,000)</td>
+          <td>$50</td>
+        </tr>
+        <tr>
+          <td>Snack Bar, Drinks, & Lounges</td>
+          <td>Prices Vary</td>
+        </tr>
+      </table>
 </body>
 </html>
