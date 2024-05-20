@@ -1,0 +1,105 @@
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  p{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  body {
+      margin: 0;
+      background-color: rgb(255, 217, 0);
+    }
+    
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgb(131, 131, 131);
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    div.gallery {
+        margin: 5px;
+        border: 1px solid floralwhite;
+        float: left;
+        width: 180px;
+      }
+      
+      div.gallery:hover {
+        border: 1px solid floralwhite;
+      }
+      
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+      
+      div{
+        color: rgb(0, 0, 0);
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+      }
+      .grid-item {
+        background-color: rgb(255, 217, 0);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .header {
+        background-color: #62f192;
+        padding: 20px;
+        text-align: center;
+      }
+
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #f1f1f1;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
